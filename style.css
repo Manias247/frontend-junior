@@ -1,0 +1,91 @@
+* {
+    display: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+input, button, select {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.findMovie {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.year {
+    color: black;
+    text-align: center;
+}
+
+.title {
+    color: black;
+    text-align: center;
+}
+
+#tags {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wrapper {
+    border: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+    grid-auto-rows: minimax(100px, auto);
+    padding: 20px;
+}
+
+.movie:nth-child(even) {
+    background-color: rgb(118, 157, 207);
+}
+
+.movie:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.movie:hover {
+    background-color: lightgray;
+}
+
+.moviesCounter {
+    color: gray;
+    font-size: 35px;
+    text-align: center;
+}
+
+.dark {
+    background-color: rgb(43, 45, 59);
+    color: rgb(211, 216, 221);
+    filter: brightness(75%);
+}
+
+.colorModeButton {
+    background-color: whitesmoke;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.colorModeButton:active {
+    position: relative;
+    top: 1px;
+  
+}
+
+.addMovieLabel {
+    font-size: 30px;
+    font-weight: bold;
+}
